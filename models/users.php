@@ -3,7 +3,7 @@
 // Connexion à la base de données
 function dbConnect(){
     try{
-        $db = new PDO('mysql:host=localhost;dbname=crud;charset=utf8', 'root', '');
+        $db = new PDO('mysql:host=localhost;dbname=crud;charset=utf8', 'djibril', 'tamou');
         return $db;
     }catch(Exception $e){
         die('Erreur : '.$e->getMessage());
